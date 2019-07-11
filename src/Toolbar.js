@@ -21,12 +21,7 @@ class Toolbar extends React.Component {
     return (
       <div className='rbc-toolbar'>
         <span className='rbc-btn-group'>
-          <button
-            type='button'
-            onClick={this.navigate.bind(null, navigate.TODAY)}
-          >
-            {messages.today}
-          </button>
+         
           <button
             type='button'
             onClick={this.navigate.bind(null, navigate.PREVIOUS)}
@@ -38,6 +33,12 @@ class Toolbar extends React.Component {
             onClick={this.navigate.bind(null, navigate.NEXT)}
           >
             {messages.next}
+          </button>
+          <button
+            type='button'
+            onClick={this.navigate.bind(null, navigate.TODAY)}
+          >
+            {messages.today}
           </button>
         </span>
 
